@@ -13,7 +13,7 @@ public class LightBulb {
 	
 	public LightBulb(int x, int y, Color color) {
 		
-		lightBulb = new ClickableEllipse();
+		lightBulb = new ClickableEllipse(this);
 		lightBulb.setColor(color);
 		lightBulb.setSize(20,20);
 		
@@ -33,10 +33,11 @@ public class LightBulb {
 Color picingColor = lightBulb.getColor();
 return picingColor;
 	}
+	/*
 	public void setColor(Color color) {
 		lightBulb.setColor(color);
 	}
-	
+	*/
 	
 	public int getXLocation(){
 		int getterx =	lightBulb.getXLocation();	

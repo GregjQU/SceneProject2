@@ -10,7 +10,7 @@ public class ClickableEllipse extends Ellipse {
 	
 	public ClickableEllipse(LightBulb lightbulb) {
 		
-		setColor(Color.green);
+		setColor(Color.yellow);
 		this.lightBulb = lightbulb;
 	}
 	
