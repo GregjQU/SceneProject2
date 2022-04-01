@@ -8,12 +8,12 @@ import wheels.users.Rectangle;
 
 public class LightBulb {
 
-	private Ellipse lightBulb;
+	private ClickableEllipse lightBulb;
 	private Rectangle cover;
 	
 	public LightBulb(int x, int y, Color color) {
 		
-		lightBulb = new Ellipse();
+		lightBulb = new ClickableEllipse();
 		lightBulb.setColor(color);
 		lightBulb.setSize(20,20);
 		
@@ -53,6 +53,27 @@ return picingColor;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+	}
+
+	public void setColor() {
+		// TODO Auto-generated method stub
+		Color v = lightBulb.getColor(); 
+		 
+		if (v == Color.yellow) {
+		 
+		lightBulb.setColor(Color.blue);
+		 
+	//	segment1.setColor(Color.blue);
+		 
+		}else if(v == Color.blue) {
+		 
+		lightBulb.setColor(Color.yellow);
+		 
+		//segment1.setColor(Color.green);
+		 
+		}
+		 
 
 	}
 
