@@ -1,0 +1,3 @@
+Project functions:
+
+*Click on the lightbulb to change the color of it on the lamp post
