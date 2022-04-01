@@ -43,7 +43,7 @@ public class StreetLamp {
 	public void setColor(Color color) {
 		base.setColor(color);
 		pole.setColor(color);
-		lightBulb.setColor(color);
+		//lightBulb.setColor(color);
 		poleTop.setColor(color);
 	}
 	
