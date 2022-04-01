@@ -4,6 +4,7 @@ import java.awt.Color;
 
 public class Streets {
 	private Rectangle street,road;
+	private Person guy;
 	private Ellipse sewer;
 	
 	public Streets(int x, int y) {
@@ -15,6 +16,10 @@ public class Streets {
 		road.setColor(Color.darkGray);
 		road.setSize(700,50);
 		
+		//guy = new Person(x, y, color);
+		
+				
+				
 		sewer = new Ellipse();
 		sewer.setColor(Color.LIGHT_GRAY);
 		sewer.setSize(40,40);
