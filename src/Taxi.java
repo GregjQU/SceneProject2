@@ -7,18 +7,19 @@ import wheels.users.*;
 public class Taxi {
 
 	//private ClickableObject taxi;
-	private RoundedRectangle  taxi,windsheild;
+	//private RoundedRectangle  ;
+	private DraggableRoundedRectangle taxi, windsheild;
 	private Wheel wheel1, wheel2;
 	private Rectangle taxiSign;
 	
 	
 	public Taxi(int x, int y ) {
 		
-		taxi= new RoundedRectangle();
+		taxi= new DraggableRoundedRectangle(this);
 		taxi.setColor(Color.yellow);
 		taxi.setSize(60,40);
 		
-		windsheild= new RoundedRectangle();
+		windsheild= new DraggableRoundedRectangle(this);
 		windsheild.setColor(Color.cyan);
 		windsheild.setSize(30,20);
 		
@@ -51,6 +52,14 @@ public class Taxi {
 		
 		//taxi.setColor(color);
 		
+	}
+	public int getXLocation() {
+		// TODO Auto-generated method stub
+		return taxi.getXLocation();
+	}
+	public int getYLocation() {
+		// TODO Auto-generated method stub
+		return taxi.getYLocation();
 	}
 	
 	
