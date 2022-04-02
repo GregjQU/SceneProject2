@@ -13,6 +13,7 @@ private Skyy skyy;
 	private StreetLamp streetLamp;
 	private Taxi taxi;
 	private Streets street;
+	private Person person;
 	
 	//private Window window;
 //	private StreetLamp streetLamp2;
@@ -27,7 +28,7 @@ private Skyy skyy;
 		building2.setColor(Color.blue);
 		streetLamp = new StreetLamp(x, y + 37, null);
 		taxi = new Taxi(x, y+ 390); 
-		
+		person =new Person(x,y);
 	}
 	
 	
@@ -38,6 +39,7 @@ private Skyy skyy;
 street.setLocation(x + 400, y);
 streetLamp.setLocation(x, y);
 taxi.setLocation(x, y);
+person.setLocation(x, y);
 	}
 
 	
