@@ -9,7 +9,7 @@ public class Person {
 	public Person(int x, int y) {
 		head = new Ellipse();
 		head.setColor(Color.green);
-		head.setSize(10,10);
+		head.setSize(12,12);
 		
 		body =new RoundedRectangle();
 		body.setColor(Color.black);
@@ -22,9 +22,9 @@ public class Person {
 	
 public  void setLocation(int x, int y) {
 		
-		head.setLocation(x, y);
+		head.setLocation(x +80, y+ 400);
 		
-		body.setLocation(x , y+ 8);
+		body.setLocation(x + 80 , y+ 408);
 	}
 public Color getColor() {
 	Color colorpi= body.getColor();

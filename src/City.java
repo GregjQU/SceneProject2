@@ -39,7 +39,7 @@ private Skyy skyy;
 street.setLocation(x + 400, y);
 streetLamp.setLocation(x, y);
 taxi.setLocation(x, y);
-person.setLocation(x, y);
+person.setLocation(x, y+ 60);
 	}
 
 	
