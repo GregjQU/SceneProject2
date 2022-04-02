@@ -8,11 +8,11 @@ public class DraggableRoundedRectangle extends RoundedRectangle {
 
 	int previousMouseX;
 	int previousMouseY;
-	private Taxi taxi;
+	private Truck truck;
 	
-	public DraggableRoundedRectangle(Taxi taxi) {
+	public DraggableRoundedRectangle(Truck truck) {
 		
-		this.taxi = taxi;
+		this.truck = truck;
 		
 	}
 	 
@@ -28,7 +28,7 @@ public class DraggableRoundedRectangle extends RoundedRectangle {
 	public void mouseDragged(MouseEvent e) {
 		 
 		 
-		taxi.setLocation(taxi.getXLocation() + e.getX() - previousMouseX, taxi.getYLocation() + e.getY() - previousMouseY);
+		truck.setLocation(truck.getXLocation() + e.getX() - previousMouseX, truck.getYLocation() + e.getY() - previousMouseY);
 		 
 		 
 		previousMouseX = e.getX();

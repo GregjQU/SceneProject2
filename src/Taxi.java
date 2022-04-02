@@ -8,18 +8,18 @@ public class Taxi {
 
 	//private ClickableObject taxi;
 	//private RoundedRectangle  ;
-	private DraggableRoundedRectangle taxi, windsheild;
+	private RoundedRectangle taxi, windsheild;
 	private Wheel wheel1, wheel2;
 	private Rectangle taxiSign;
 	
 	
 	public Taxi(int x, int y ) {
 		
-		taxi= new DraggableRoundedRectangle(this);
+		taxi= new RoundedRectangle();
 		taxi.setColor(Color.yellow);
 		taxi.setSize(60,40);
 		
-		windsheild= new DraggableRoundedRectangle(this);
+		windsheild= new RoundedRectangle();
 		windsheild.setColor(Color.cyan);
 		windsheild.setSize(30,20);
 		

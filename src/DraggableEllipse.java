@@ -6,11 +6,11 @@ public class DraggableEllipse extends Ellipse {
 
 	int previousMouseX;
 	int previousMouseY;
-	private Person person;
+	private Tires tires;
 	
-	public DraggableEllipse(Person person) {
+	public DraggableEllipse(Tires tires) {
 		 
-		this.person = person;
+		this.tires = tires;
 		 
 		 
 		}
@@ -29,7 +29,7 @@ public class DraggableEllipse extends Ellipse {
 		public void mouseDragged(MouseEvent e) {
 			 
 			 
-			person.setLocation(person.getXLocation() + e.getX() - previousMouseX, person.getYLocation() + e.getY() - previousMouseY);
+			tires.setLocation(tires.getXLocation() + e.getX() - previousMouseX, tires.getYLocation() + e.getY() - previousMouseY);
 			 
 			 
 			previousMouseX = e.getX();

@@ -3,12 +3,12 @@ import java.awt.color.*;
 import wheels.users.RoundedRectangle;
 
 public class AutoBody {
-private RoundedRectangle body;
+private DraggableRoundedRectangle body;
 
 	public AutoBody(int x, int y, Truck truck) {
 		// TODO Auto-generated constructor stub
-	//	body = new RoundedRectangle(truck);
-		body = new RoundedRectangle();
+		body = new DraggableRoundedRectangle(truck);
+		//body = new RoundedRectangle();
 		body.setColor(Color.red);
 		body.setSize(60, 20);
 		
