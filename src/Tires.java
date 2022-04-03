@@ -3,7 +3,7 @@ import wheels.users.Ellipse;
 
 public class Tires {
 
-	private DraggableEllipse tire;
+	private DraggableEllipse tire, tire1;
 	//private Truck truck;
 	
 	public Tires(int x, int y, Truck truck) {
@@ -11,6 +11,12 @@ public class Tires {
 		tire = new DraggableEllipse(this);
 		tire.setSize(20, 20);
 		tire.setColor(Color.black);
+		
+		
+		tire1 = new DraggableEllipse(this);
+		tire1.setSize(20, 20);
+		tire1.setColor(Color.black);
+		
 		
 		setLocation(x, y);
 		
@@ -24,7 +30,8 @@ public class Tires {
 	
 	public void setLocation(int x, int y) {
 		// TODO Auto-generated method stub
-		tire.setLocation(x, y);
+		tire.setLocation(x, y+ 10);
+		tire1.setLocation(x + 40, y + 10);
 	}
 
 

@@ -23,14 +23,15 @@ private Skyy skyy;
 		skyy= new Skyy(x, y);
 		building = new Building(x,y);
 		street= new Streets(x, y);
-		building2 = new Building(x + 300,y +100);
 		
-	
+		truck = new Truck(x, y);
+		building2 = new Building(x + 300,y +100);
+
 		building2.setColor(Color.blue);
 		streetLamp = new StreetLamp(x, y + 37, null);
 		taxi = new Taxi(x, y+ 390); 
 		person =new Person(x,y);
-		truck = new Truck(x, y);
+		
 	}
 	
 	
