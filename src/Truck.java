@@ -1,12 +1,12 @@
 
 public class Truck {
 private AutoBody autoBody;
-private Tires tire;
+private Tires tires;
 
 
 public Truck (int x,int y) {
 	autoBody = new AutoBody(x,y,this);
-	tire = new Tires(x,y,this);
+	tires = new Tires(x,y,this);
 	
 }
 public int getXLocation() {
@@ -18,7 +18,7 @@ public int getYLocation() {
 }
 public void setLocation(int x, int y) {
 	autoBody.setLoction(x,y);
-	tire.setLocation(x,y);
+	tires.setLocation(x,y);
 	
 }
 

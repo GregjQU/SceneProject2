@@ -3,7 +3,7 @@ import java.awt.color.*;
 import wheels.users.RoundedRectangle;
 
 public class AutoBody {
-private DraggableRoundedRectangle body;
+private DraggableRoundedRectangle body,top,windsheild;
 
 	public AutoBody(int x, int y, Truck truck) {
 		// TODO Auto-generated constructor stub
@@ -11,6 +11,15 @@ private DraggableRoundedRectangle body;
 		//body = new RoundedRectangle();
 		body.setColor(Color.red);
 		body.setSize(60, 20);
+		
+		top = new DraggableRoundedRectangle(truck);
+		top.setColor(Color.red);
+		top.setSize(40, 20);
+		
+		
+		windsheild = new DraggableRoundedRectangle(truck);
+		windsheild.setColor(Color.cyan);
+		windsheild.setSize(20, 10);
 		
 		setLoction(x,y);
 	}
@@ -32,6 +41,9 @@ private DraggableRoundedRectangle body;
 	public void setLoction(int x, int y) {
 		// TODO Auto-generated method stub
 		body.setLocation(x, y);
+		top.setLocation(body.getXLocation() , body.getYLocation()- 10);
+		windsheild.setLocation(body.getXLocation() + 20 , body.getYLocation()- 10);
+		
 	}
 
 	

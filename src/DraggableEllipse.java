@@ -6,16 +6,22 @@ public class DraggableEllipse extends Ellipse {
 
 	int previousMouseX;
 	int previousMouseY;
-	private Tires tires;
-	
+	private Truck truck;
+	/*
 	public DraggableEllipse(Tires tires) {
 		 
 		this.tires = tires;
 		 
 		 
 		}
-		 
-		 
+		*/ 
+		
+		public DraggableEllipse(Truck truck) {
+		this.truck=truck;
+			// TODO Auto-generated constructor stub
+	}
+
+
 		public void mousePressed(MouseEvent e) {
 		 
 		 
@@ -29,7 +35,7 @@ public class DraggableEllipse extends Ellipse {
 		public void mouseDragged(MouseEvent e) {
 			 
 			 
-			tires.setLocation(tires.getXLocation() + e.getX() - previousMouseX, tires.getYLocation() + e.getY() - previousMouseY);
+			truck.setLocation(truck.getXLocation() + e.getX() - previousMouseX, truck.getYLocation() + e.getY() - previousMouseY);
 			 
 			 
 			previousMouseX = e.getX();
