@@ -19,7 +19,7 @@ public class ClickableMoon  extends Ellipse{
 
 
 	public void mouseClicked(MouseEvent e) {
-		moon.increaseSize(2);
+	//	moon.increaseSize(2);
 		//skyy.increaseSize(2);
 	}
 

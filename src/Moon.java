@@ -1,7 +1,7 @@
 import java.awt.Color;
 import wheels.users.Ellipse;
 public class Moon {
-
+/*
 	private  ClickableMoon moon;
 	
 	public  Moon(int x, int y, City city) {
@@ -22,5 +22,5 @@ public class Moon {
 		moon.setSize(moon.getWidth() + amount, moon.getHeight() + amount);
 	//	segment2.setSize(segment2.getWidth() + amount, segment2.getHeight() + amount);
 	}
-
+*/
 }

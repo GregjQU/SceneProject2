@@ -16,15 +16,12 @@ public class City {
 	private FireHydrant fireHydrant;
 	private Person person;
 	private Truck truck;
-	private ClickableMoon moon;
+//	private ClickableMoon moon;
 	// private Window window;
 //	private StreetLamp streetLamp2;
 
 	public City(int x, int y, Scene scene) {
 		skyy = new Skyy(x, y);
-
-		// City city = null;
-		//moon = new ClickableMoon(x, y, this);
 
 		building = new Building(x, y);
 		street = new Streets(x, y);
@@ -40,20 +37,19 @@ public class City {
 
 	}
 
-	public int getXLocation() {
-
-		return moon.getXLocation();
-	}
-
-	public int getYLocation() {
-
-		return moon.getYLocation();
-	}
-
+	/*
+	 * public int getXLocation() {
+	 * 
+	 * return moon.getXLocation(); }
+	 * 
+	 * public int getYLocation() {
+	 * 
+	 * return moon.getYLocation(); }
+	 */
 	public void setLocation(int x, int y) {
 		// TODO Auto-generated method stub
 		skyy.setLocation(x, y);
-	//	moon.setLocation(x, y);
+
 		building.setLocation(x, y);
 		street.setLocation(x + 400, y);
 		fireHydrant.setLocation(x + 395, y + 450);
@@ -62,14 +58,10 @@ public class City {
 		person.setLocation(x, y + 60);
 		truck.setLocation(x, y);
 	}
-
-	public void increaseSize(int amount) {
-		// TODO Auto-generated method stub
-
-//
-		// clickableMoon.setSize(clickableMoon.getWidth() + amount,
-		// clickableMoon.getHeight() + amount);
-		moon.increaseSize(amount);
-	}
-
+	/*
+	 * public void increaseSize(int amount) { // TODO Auto-generated method stub
+	 * 
+	 * // // clickableMoon.setSize(clickableMoon.getWidth() + amount, //
+	 * clickableMoon.getHeight() + amount); moon.increaseSize(amount); }
+	 */
 }
