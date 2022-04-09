@@ -1,3 +1,7 @@
 Project functions:
 
-*Click on the lightbulb to change the color of it on the lamp post
+*Click on the light bulb to change the color of it on the lamp post. The light changes from yellow to gray, representing the light being turned on and off.
+
+can click on the red truck and drag it across the screen. It is made with draggableRoundedRectangles
+
+can click on the top part of the fire hydrant and have it grow in size.
