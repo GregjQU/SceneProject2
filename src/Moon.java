@@ -4,10 +4,10 @@ public class Moon {
 
 	private  ClickableMoon moon;
 	
-	public  Moon(int x, int y, Skyy skyy) {
-		moon = new ClickableMoon(skyy);
-		moon.setColor(Color.gray);
-		moon.setSize(80,80);
+	public  Moon(int x, int y, City city) {
+		moon = new ClickableMoon( city);
+		moon.setColor(Color.red);
+		moon.setSize(280,280);
 		
 		setLocation(x, y);
 		

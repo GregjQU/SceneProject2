@@ -63,11 +63,11 @@ return picingColor;
 		 
 		if (v == Color.yellow) {
 		 
-		lightBulb.setColor(Color.blue);
+		lightBulb.setColor(Color.darkGray);
 		 
 	//	segment1.setColor(Color.blue);
 		 
-		}else if(v == Color.blue) {
+		}else if(v == Color.darkGray) {
 		 
 		lightBulb.setColor(Color.yellow);
 		 

@@ -13,7 +13,7 @@ public class Scene extends Frame {
 	private City city;
 	
 	public Scene() {
-		city = new City(0, 0);
+		city = new City(0, 0, this);
 		
 	}
 	
